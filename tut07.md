@@ -177,8 +177,8 @@ __Induktionsbasis__:
 Sei `x :: Int` eine beliebige Ganzzahl.
 Wir zeigen nun, dass `product (yield (Node x [])) = yieldProd (Node x [])`.
 ```
-product (yield (Node x [t₁, …, tₖ]))
- = product [x]              (#5)
+product (yield (Node x []))
+ = product [x]              (#4)
  = x                        (L1)
  = yieldProd (Node x [])    (#8)
 ```
